@@ -32,6 +32,14 @@ _ALL_RECIPES = [
         supports_distributed=True,
     ),
     Recipe(
+        name="dev/grpo_full_finetune_single_device",
+        file_path="dev/grpo_full_finetune_single_device.py",
+        configs=[
+            Config(name="dev/3B_full_grpo", file_path="dev/3B_full_grpo.yaml"),
+        ],
+        supports_distributed=False,
+    ),
+    Recipe(
         name="dev/async_grpo_full_finetune_distributed",
         file_path="dev/async_grpo_full_finetune_distributed.py",
         configs=[

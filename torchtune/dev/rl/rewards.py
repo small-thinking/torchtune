@@ -11,6 +11,8 @@ from typing import Optional
 
 import torch
 
+from torchtune.modules.transforms.tokenizers import ModelTokenizer
+
 
 @dataclass
 class RewardOutput:
